@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WINNAH CYBERNETICS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#0b0b0b;
+--card:#151515;
+--gold:#b58d4a;
+--text:#f2f2f2;
+--muted:#b8b8b8;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:25px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-family:'Cormorant Garamond',serif;
+font-size:2rem;
+letter-spacing:3px;
+color:var(--gold);
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:.95rem;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--gold);
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1800&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.hero-content h1{
+font-family:'Cormorant Garamond',serif;
+font-size:5rem;
+letter-spacing:5px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+color:var(--muted);
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+border:1px solid var(--gold);
+color:white;
+text-decoration:none;
+transition:.4s;
+}
+
+.btn:hover{
+background:var(--gold);
+}
+
+section{
+padding:100px 8%;
+}
+
+.section-title{
+font-family:'Cormorant Garamond',serif;
+font-size:3rem;
+margin-bottom:15px;
+color:var(--gold);
+}
+
+.section-sub{
+color:var(--muted);
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:var(--card);
+overflow:hidden;
+border-radius:12px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:400px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+margin-bottom:10px;
+font-family:'Cormorant Garamond',serif;
+font-size:1.8rem;
+}
+
+.card-content p{
+color:var(--muted);
+line-height:1.6;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.about-text p{
+line-height:1.8;
+color:var(--muted);
+}
+
+.footer{
+background:#050505;
+padding:50px;
+text-align:center;
+}
+
+.footer h2{
+font-family:'Cormorant Garamond',serif;
+color:var(--gold);
+margin-bottom:15px;
+}
+
+.footer p{
+color:var(--muted);
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:3rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">WINNAH CYBERNETICS</div>
+<ul>
+<li><a href="#heritage">Heritage</a></li>
+<li><a href="#formalwear">Formalwear</a></li>
+<li><a href="#shoes">Shoes</a></li>
+<li><a href="#casual">Casualwear</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h1>WINNAH CYBERNETICS</h1>
+<p>
+Where Botswana Heritage Meets Tomorrow.
+Luxury fashion inspired by culture, structure, and futuristic elegance.
+</p>
+<a href="#heritage" class="btn">Explore Collection</a>
+</div>
+</section>
+
+<section id="heritage">
+<h2 class="section-title">Cultural Fusion</h2>
+<p class="section-sub">
+Traditional Botswana inspiration transformed into modern luxury silhouettes.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57b?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Heritage Blazer Dress</h3>
+<p>Structured elegance infused with cultural storytelling.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Patterned Couture</h3>
+<p>Modern tailoring enhanced by geometric African influences.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="formalwear">
+<h2 class="section-title">Formalwear Atelier</h2>
+<p class="section-sub">
+Precision tailoring designed for distinction.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Executive Collection</h3>
+<p>Sharp monochromatic suits built with modern sophistication.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Signature Tailoring</h3>
+<p>Luxury craftsmanship and timeless confidence.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="shoes">
+<h2 class="section-title">Women's Shoes</h2>
+<p class="section-sub">
+Designed to command attention.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Heritage Heels</h3>
+<p>Cultural inspiration elevated into luxury footwear.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Classic Pumps</h3>
+<p>Minimalist silhouettes for everyday sophistication.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="casual">
+<h2 class="section-title">Decent Casualwear</h2>
+<p class="section-sub">
+Premium essentials made for everyday excellence.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Heavy Knit Tees</h3>
+<p>Comfort, structure, and luxury in one statement piece.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=80">
+<div class="card-content">
+<h3>Utility Overshirts</h3>
+<p>Refined casualwear built for modern lifestyles.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="about">
+
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80">
+
+<div class="about-text">
+<h2 class="section-title">Our Vision</h2>
+
+<p>
+Winnah CYBERNETICS exists at the intersection of heritage and innovation.
+Inspired by Botswana's cultural identity and driven by a retro-futuristic vision,
+the brand creates garments that honor the past while shaping the future.
+Every collection is designed for those who value elegance, craftsmanship,
+and timeless sophistication.
+</p>
+
+</div>
+
+</section>
+
+<footer class="footer">
+<h2>WINNAH CYBERNETICS</h2>
+<p>Heritage. Structure. Tomorrow.</p>
+</footer>
+
+</body>
+</html>
